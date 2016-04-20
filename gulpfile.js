@@ -45,7 +45,7 @@ gulp.task('server', ['js', 'sass'], function() {
   });
   
   gulp.watch(PATHS.app + '*.html', browserSync.reload);
-  gulp.watch(PATHS.js + '*.js', ['js']);
+  gulp.watch(PATHS.js + '**/*.js', ['js']);
   gulp.watch(PATHS.sass + '**/*.scss', ['sass']);
 });
 
